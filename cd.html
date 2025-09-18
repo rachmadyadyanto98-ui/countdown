@@ -9,6 +9,7 @@
       height: 100vh;
       display: flex;
       font-family: Arial, sans-serif;
+      background-color: #000;
       color: white;
     }
 
@@ -23,11 +24,25 @@
     }
 
     .technic {
-      background-color: #FF3333; /* merah cerah */
+      position: relative;
     }
 
     .bobbin {
-      background-color: #3399FF; /* biru matang */
+      position: relative;
+    }
+
+    .divider {
+      width: 4px;
+      background-color: #555;
+      height: 100vh;
+    }
+
+    .countdown-red {
+      color: #FF3333;
+    }
+
+    .countdown-blue {
+      color: #3399FF;
     }
 
     .watermark {
@@ -53,11 +68,12 @@
 </head>
 <body>
   <div class="section technic">
-    <div id="countdown-technic">Menunggu...</div>
+    <div id="countdown-technic" class="countdown-red">Menunggu...</div>
     <div class="watermark-red">Technic</div>
   </div>
+  <div class="divider"></div>
   <div class="section bobbin">
-    <div id="countdown-bobbin">Menunggu...</div>
+    <div id="countdown-bobbin" class="countdown-blue">Menunggu...</div>
     <div class="watermark">BOBBIN</div>
   </div>
 
